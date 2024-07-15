@@ -1,5 +1,8 @@
 <h1><strong>nn4sa: Neural Networks for Sentiment Analysis</strong></h1>
-<img src="https://img.shields.io/badge/maintained-yes-green"><img src="https://img.shields.io/github/license/XavierSpycy/nn4sa"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen">
+
+![Maintain](https://img.shields.io/badge/maintained-yes-green) 
+![License](https://img.shields.io/github/license/XavierSpycy/nn4sa) 
+![Contribution](https://img.shields.io/badge/contributions-welcome-brightgreen)
 
 <h2>Data Description</h2>
 <ul>
