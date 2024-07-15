@@ -1,0 +1,6 @@
+*.npy
+models/bert-large-cased-whole-word-masking/*
+models/bert-base-uncased/*
+*.log
+test.ipynb
+*.pyc
