@@ -15,7 +15,7 @@ sys.path.append(".")
 
 from nn4sa.datasets import SADataset
 from nn4sa.models import BertClassifier, CLSHead, RNNClassifier
-from nn4sa.metrics import accuracy, precision, recall
+from nn4sa.metrics import accuracy #, precision, recall
 from nn4sa.utils import seed_everything, train
 from nn4sa.callbacks import EarlyStopping, History
 from nn4sa.preprocessing import RNNTokenizer
@@ -124,7 +124,7 @@ def main(args):
           criterion=criterion,
           num_epochs=num_epochs,
           early_stopping=EarlyStopping(),
-          history=History({'accuracy': accuracy, 'precision': precision, 'recall': recall}))
+          history=History({'accuracy': accuracy}))
 
 if __name__ == "__main__":
     args = parser.parse_args()

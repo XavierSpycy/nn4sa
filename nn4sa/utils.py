@@ -117,7 +117,7 @@ def train(model: nn.Module,
                         history.update(key, eval_temp_metrics[key], stage='eval')
 
                 if early_stopping and early_stopping(eval_loss, epoch+1):
-                    tqdm.write(f'Early stopping at epoch {epoch + 1}. Best epoch: {early_stopping.best_epoch}\n')
+                    tqdm.write(f'Early stopping at epoch {epoch + 1}. Best epoch: {early_stopping.best_epoch}')
                     break
                     
         if eval_dataloader is not None:

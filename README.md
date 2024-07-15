@@ -1,4 +1,5 @@
 <h1><strong>nn4sa: Neural Networks for Sentiment Analysis</strong></h1>
+<img src="https://img.shields.io/badge/maintained-yes-green"><img src="https://img.shields.io/github/license/XavierSpycy/nn4sa"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen">
 
 <h2>Data Description</h2>
 <ul>
@@ -71,7 +72,7 @@
             <td align="center">RNN from Scratch (LSTM)</td>
             <td align="center">77.98%</td>
             <td align="center">76.79%</td>
-            <td align="center" rowspan="3">3</td>
+            <td align="center" rowspan="2">3</td>
             <td align="center">Preprocessing</td>
         </tr>
         <tr>
@@ -84,11 +85,12 @@
             <td align="center">SOTA Embedder</td>
             <td align="center">85.98%</td>
             <td align="center">85.71%</td>
+            <td align="center">4</td>
             <td align="center">Embedding</td>
         </tr>
     </table>
 </div>
 
-[!NOTE]
+> [!NOTE]
 > RNNs typically infer quickly. However, training from scratch means building a tokenizer from scratch as well, which in our case is straightforward but more time-consuming than the actual training process. Saving the tokenizer vocabulary significantly enhances efficiency for subsequent uses.
 > The training process for a classification head using state-of-the-art embedding models is efficient when split into `embedding extraction` and `classification head training` from an engineering perspective. Nevertheless, `embedding extraction` is quite time-consuming. In our case, processing 300,000 samples took about 24 hours on 2 RTX 4090 GPUs with a batch size of 1.
